@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Montserrat+Subrayada&family=Open+Sans:wght@500&family=Roboto:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@700&family=Varela+Round&display=swap');
+
+
+
+
+:root{
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --light-blue: #005498;
+    --color-prim: #9d0191;
+    --coloe-sec: #db6400;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  background-color: var(--light-blue);
+
+}
+.container{
+/* line-height: 1.5; */
+}
+
+.container h1{
+    font-size: 2rem;
+font-weight: 100;
+    color: #fff;
+    text-align: center;
+}
+.container span{
+font-size: 2.6rem;
+font-weight: 700;
+font-family: ;
+}
+.para p{
+    color: #ddd;
+   line-height: 1.5;
+   
+   margin-bottom: 40px;
+
+}
+.form-action input{
+    width: 25rem;
+    padding: 11px;
+    outline: none;
+    border: none;
+}
+.form-action input:hover{
+    border-bottom: 2px solid var(--color-prim);
+}
+.form-action button{
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    background-color: var(--light-blue);
+    color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.form-action button:hover{
+    background-color: #db6400;
+}
+
+.form-action button:active{
+    background-color: var(--light-blue);
+}
+.footer{
+    color: white;
+    margin-top: 100px;
+}
+.footer a{
+    color: var(--coloe-sec);
+    text-decoration: none;
+}
+
+.modal{
+    display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0,0,0,.5);
+z-index: 1;
+
+
+}
+.modal-content{
+    position: relative;
+    width: 80%;
+    max-width: 20rem;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 2rem;
+    border: 2px solid #777;
+    text-align: center;
+    animation: slide ease .8s;
+    font-family: 'Roboto', sans-serif;
+}
+@keyframes slide {
+    0%{
+transform: translateY(-30rem);
+    }
+    100%{
+        transform: translateY(0);
+
+    }
+    
+}
+.form{
+    padding-bottom: 1rem;
+}
+
+#close{
+position: absolute;
+top: 5px;
+right: 1rem;
+color: var(--color-prim);
+font-size: 1.5rem;
+cursor: pointer;
+}
+.progress{
+    width: 50%;
+    height: 4px;
+    background-color: #db6400
+}
+.progress ::-webkit-progress-value{
+background-color: var(--coloe-sec);
+transition: width 1s ease;
+}
